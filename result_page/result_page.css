@@ -1,0 +1,178 @@
+/* General Styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #e0e0e0; /* Light text from Style 1 */
+    font-family: "Poppins", sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #121212 !important; /* Dark background from Style 1 */
+}
+
+/* Container */
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Content Box */
+.content_box {
+    display: flex;
+    flex-direction: column;
+    background-color: #1f1f1f; /* Darker background from Style 1 */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7); /* Adjusted shadow from Style 1 */
+    margin: 10px;
+    height: auto;
+    width: 500px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+/* Heading */
+.heading {
+    color: #e0e0e0; /* Light header text from Style 1 */
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 3rem;
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Sub-Head */
+.sub_head {
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    margin: 10px 0;
+    text-align: center;
+    color: lightseagreen;
+}
+
+.sub_head span {
+    color: tomato;
+}
+
+/* Mark Container */
+.mark_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mark_container div {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.mark_container div div {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 5px 0;
+    width: 50%;
+}
+
+.div1, .div2 {
+    color: lightcoral;
+}
+
+/* Return Button */
+.return {
+    font-weight: bold;
+    padding: 10px;
+    color: #e0e0e0; /* Light text from Style 1 */
+    font-size: 18px;
+    text-align: center;
+    border-radius: 3px;
+    margin: 10px;
+}
+
+/* Credits */
+.credits {
+    background: url("images/credit_font.gif") no-repeat;
+    background-size: cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Initial Alert Container */
+.initial_alert_container {
+    background-color: rgba(34, 34, 34, 0.95); /* Darker background from Style 1 */
+    position: absolute;
+    width: 550px;
+    padding: 20px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-transform: uppercase;
+    flex-wrap: wrap;
+    z-index: 999;
+    font-size: 1.2rem;
+    border: solid 1px #444; /* Darker border from Style 1 */
+    color: white;
+}
+
+.initial_alert_container span {
+    color: #bb86fc; /* Light purple text from Style 1 */
+    font-weight: bold;
+}
+
+.initial_alert_container {
+    visibility: visible;
+}
+
+/* Button */
+button {
+    background-color: #333; /* Dark button background from Style 1 */
+    color: #e0e0e0; /* Light button text from Style 1 */
+    padding: 10px 20px;
+    border: solid 1px #555; /* Darker button border from Style 1 */
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Adjusted shadow from Style 1 */
+    transition: box-shadow 0.5s ease, transform 0.5s ease;
+}
+
+button:hover {
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.4); /* Darker shadow on hover from Style 1 */
+    transform: translateY(-2px);
+}
+
+button:active {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow on button press from Style 1 */
+    transform: translateY(0);
+}
+
+/* Responsive Styling for Mobile */
+@media (max-width: 768px) {
+    .initial_alert_container {
+        width: 350px;
+    }
+
+    .heading {
+        font-size: 2rem;
+    }
+
+    .sub_head {
+        font-size: 1.5rem;
+    }
+
+    .mark_container div .div1, 
+    .mark_container div .div2 {
+        font-size: 1rem;
+    }
+}
